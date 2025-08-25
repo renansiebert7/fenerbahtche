@@ -1,0 +1,224 @@
+* {
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imagem-fundo {
+    position: fixed; /* Mantém a imagem fixa na tela */
+    top: 0;
+    left: 0;
+    width: 100%; /* Corrigido: apenas 100% */
+    height: 100%; /* Corrigido: apenas 100% */
+    z-index: -1; /* Garante que a imagem fique atrás de outros elementos */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.div-texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 70px;
+    color: rgb(238, 255, 0);
+    gap: 50px;
+    margin: auto;
+    width: 68%;
+}
+
+.div-texto h1 {
+    color: white;
+}
+
+.div-texto .ul {
+    color: red;
+}
+
+.div-texto .final {
+    color: green;
+}
+
+.link-camisas, .link-jogadores {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 1.7em;
+    margin-bottom: 30px;
+}
+
+.link-jogadores {
+    color: yellow;
+}
+
+.mascara {
+    height: 140%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+
+.escudo-fenerbas,
+.escudo-fenerbas2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.escudo-fenerbas {
+    top: 20px;
+    left: 60px;
+}
+
+.escudo-fenerbas2 {
+    top: 20px;
+    right: 60px;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 30px;
+}
+
+header h1 {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+header h2 {
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+header h3 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.form-camisas {
+    background: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -350px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+.link-whats img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* Media Queries */
+@media (min-width: 1700px) {
+    .imagem-container {
+        flex: 0 0 calc(50% - 20px);
+        /* 2 imagens lado a lado */
+    }
+
+    .caixa>div:nth-child(3) {
+        flex: 0 0 100%;
+        /* A terceira imagem ocupa toda a largura */
+        display: flex;
+        justify-content: center;
+        /* Centraliza a terceira imagem */
+    }
+}
+
+@media (max-width: 1215px) {
+    .imagem-container {
+        flex: 0 0 100%;
+    }
+
+    header h1 {
+        margin-top: 30px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    header h2 {
+        margin-top: 15px;
+        font-weight: normal;
+        font-size: 15px;
+
+    }
+
+    header h3 {
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .imagem-container {
+        flex: 0 0 100%;
+    }
+
+    .div-texto {
+        width: 100%;
+    }
+
+    .escudo-fenerbas,
+    .escudo-fenerbas2 {
+        display: none;
+    }
+
+    header h1 {
+        margin-top: 30px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    header h2 {
+        margin-top: 15px;
+        font-weight: normal;
+        font-size: 15px;
+
+    }
+
+    header h3 {
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 10px;
+    }
+
+    .div-texto h1 {
+    color: white;
+    white-space: nowrap; /* Adiciona esta linha */
+    overflow: hidden;    /* Opcional: oculta o texto que ultrapassar o contêiner */
+    text-overflow: ellipsis; /* Opcional: adiciona "..." ao final do texto se ele for cortado */
+    }
+
+    .link-whats img {
+    height: 35px;
+    }
+}

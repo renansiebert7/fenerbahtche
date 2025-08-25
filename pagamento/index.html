@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagamento Camisas</title>
+</head>
+
+<body>
+    <img src="/assets/Design sem nome (1).png" alt="img-fundo">
+    <div class="mascara"></div>
+    <div class="container">
+        <h1><b>PAGAMENTO:</b></h1>
+        <img src="/assets/Pague com pix moderno verde branco preto a4 (1).png" alt="pix" class="pix">
+    </div>
+
+    <div class="codigo">
+        <input type="text" id="linkPagamento"
+            value="00020101021126330014br.gov.bcb.pix011103938334029520400005303986540579.995802BR5919RENAN CARLO SIEBERT6013CARLOS BARBOS62070503***6304298D"
+            readonly>
+        <button onclick="copiarLink()">Copiar Link</button>
+    </div>
+</body>
+
+<script>
+    function copiarLink() {
+        let link = document.getElementById("linkPagamento");
+        link.select();                    // Seleciona o texto
+        link.setSelectionRange(0, 99999); // Para mobile
+        navigator.clipboard.writeText(link.value); // Copia pro clipboard
+        alert("Link copiado!");
+    }
+</script>
+
+</html>

@@ -1,30 +1,31 @@
-<h1>FENERBAHTCHÊ</h1>
-<br>
-<br>
-<h2>ESSE É O MEU PROJETO DO TIME DE FUTSAL FENERBAHTCHÊ</h2>
-<br>
-<br>
-<h4> 
-Projeto criado para representar o time de futebol Fenerbahtche, fundado em 2023 por um grupo de amigos da escola, no qual sou um dos fundadores.
+<h1>🏆 Projeto Fenerbahtchê </h1>
 
-O site apresenta:
-  <ul> 
-    <li>Jogadores e comissão técnica</li>
-    <li>Camisa oficial da torcida</li>
-    <li>Patrocinadores do time</li>
-  </ul>
+Este é um projeto autoral desenvolvido para representar o time de futsal Fenerbahtchê, fundado em 2023 por um grupo de amigos da escola, do qual sou um dos fundadores.
+
+O site foi criado com o objetivo de organizar e apresentar informações sobre o time, sua identidade visual e oferecer uma experiência interativa para torcedores e apoiadores.
+
+📌 Funcionalidades 
+
+<li>👥 Jogadores e Comissão Técnica: Página dedicada ao elenco e à equipe técnica do time.</li>
+<li>👕 Nova Camisa da Torcida: Exibição do uniforme oficial da torcida.</li>
+<li>💳 Página de Pagamento: Área para compra da camisa de forma simples e organizada.</li>
+<li>📖 Resumo sobre o Time: História, fundação e identidade do Fenerbahtchê.</li>
 <br>
-Projeto autoral com foco em organização de conteúdo, identidade visual e estruturação de página estática. </h4> 
-<br>
-<h3>Tecnologias Utilizadas:</h3>
-<ul>
-  <li> HTML </li>
-  <li> CSS </li>
-  <li> JAVA SCRIPT </li>
-</ul>
+🛠️ Tecnologias Utilizadas
 <br>
 <br>
-Acesse o Projeto Aqui:
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<br>
+🎯 Objetivo do Projeto
+<br>
+<br>
+<li>Praticar conceitos de HTML, CSS e JavaScript.</li>
+<li>Trabalhar organização de conteúdo e identidade visual.</li>
+<li>Criar uma página estática completa, com seções diferentes, simulando um site real de time esportivo.</li>
+<br>
+🚀 Acesse o Projeto
 <br>
 https://renansiebert7.github.io/fenerbahtche/
 <br>

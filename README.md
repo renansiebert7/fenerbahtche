@@ -29,4 +29,4 @@ Acesse o Projeto Aqui:
 https://renansiebert7.github.io/fenerbahtche/
 <br>
 <br>
-<img src="https://raw.githubusercontent.com/renansiebert7/fenerbahtche-project/refs/heads/master/assets/FENERBAHTCH%C3%8A.png">
+<img src="https://github.com/renansiebert7/fenerbahtche/blob/main/assets/DESIGN%20READ.ME%20GIT%20HUB.png?raw=true">

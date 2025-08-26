@@ -27,7 +27,7 @@ document.querySelector('.form-camisas').addEventListener('submit', function (eve
         headers: { 'Accept': 'application/json' }
     }).then(() => {
         // Redireciona para a página de pagamento
-        window.location.href = "pagamento/";
+        window.location.href = "/fenerbahtche/pagamento/";
     }).catch(() => {
         alert("Erro ao enviar o formulário. Tente novamente.");
     });

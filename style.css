@@ -137,6 +137,13 @@ header h3 {
     bottom: 20px;
 }
 
+.link-insta img {
+    height: 55px;
+    position: fixed;
+    right: 20px;
+    bottom: 85px;
+}
+
 /* Media Queries */
 @media (min-width: 1700px) {
     .imagem-container {
@@ -213,12 +220,17 @@ header h3 {
 
     .div-texto h1 {
     color: white;
-    white-space: nowrap; /* Adiciona esta linha */
-    overflow: hidden;    /* Opcional: oculta o texto que ultrapassar o contêiner */
-    text-overflow: ellipsis; /* Opcional: adiciona "..." ao final do texto se ele for cortado */
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
     }
 
     .link-whats img {
     height: 35px;
+    }
+
+    .link-insta img {
+        height: 30px;
+        bottom: 60px;
     }
 }

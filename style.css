@@ -6,14 +6,15 @@
 }
 
 .imagem-fundo {
-    position: fixed; /* Mantém a imagem fixa na tela */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Corrigido: apenas 100% */
-    height: 100%; /* Corrigido: apenas 100% */
-    z-index: -1; /* Garante que a imagem fique atrás de outros elementos */
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .div-texto {
@@ -40,7 +41,8 @@
     color: green;
 }
 
-.link-camisas, .link-jogadores {
+.link-camisas,
+.link-jogadores {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -148,15 +150,12 @@ header h3 {
 @media (min-width: 1700px) {
     .imagem-container {
         flex: 0 0 calc(50% - 20px);
-        /* 2 imagens lado a lado */
     }
 
     .caixa>div:nth-child(3) {
         flex: 0 0 100%;
-        /* A terceira imagem ocupa toda a largura */
         display: flex;
         justify-content: center;
-        /* Centraliza a terceira imagem */
     }
 }
 
@@ -219,14 +218,14 @@ header h3 {
     }
 
     .div-texto h1 {
-    color: white;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis; 
+        color: white;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .link-whats img {
-    height: 35px;
+        height: 35px;
     }
 
     .link-insta img {

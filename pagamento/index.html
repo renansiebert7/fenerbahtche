@@ -30,9 +30,9 @@
 <script>
     function copiarLink() {
         let link = document.getElementById("linkPagamento");
-        link.select();                    // Seleciona o texto
-        link.setSelectionRange(0, 99999); // Para mobile
-        navigator.clipboard.writeText(link.value); // Copia pro clipboard
+        link.select();                 
+        link.setSelectionRange(0, 99999); 
+        navigator.clipboard.writeText(link.value); 
         alert("Link copiado!");
     }
 </script>

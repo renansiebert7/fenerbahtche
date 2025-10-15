@@ -6,7 +6,6 @@
     overflow-x: hidden;
 }
 
-/* Imagem de fundo */
 .img-fundo {
     position: fixed;
     top: 0;
@@ -25,7 +24,6 @@
     z-index: -1;
 }
 
-/* Imagem PIX */
 .pix {
     position: absolute;
     padding: 10px;
@@ -36,7 +34,6 @@
     z-index: 2;
 }
 
-/* Container do input e botão */
 .codigo {
     position: absolute;
     top: 70%; /* Fica abaixo da pix */
@@ -71,7 +68,6 @@ button:hover {
     background: #009624;
 }
 
-/* Título */
 h1 {
     position: absolute;
     top: 15%;
@@ -82,3 +78,5 @@ h1 {
     font-weight: 900;
     text-align: center;
 }
+
+

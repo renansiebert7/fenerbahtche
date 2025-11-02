@@ -213,7 +213,7 @@ nav ul li a:hover {
 }
 
 .menu-icon.open div:nth-child(1) {
-    transform: rotate(53deg) translate(10px, 8px);
+    transform: rotate(55deg) translate(10px, 8px);
 }
 
 .menu-icon.open div:nth-child(2) {

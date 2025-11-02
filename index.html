@@ -15,10 +15,28 @@
 
 <body>
     <header>
+        <div class="menu-icon" id="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="./campeonato2023/">Campeão Sub-16 2023</a></li>
+                <li><a href="./jogadoresSub16/">Bicampeão Sub-16 2025</a></li>
+                <li><a href="./jogadoresFut7/"> Vice-Campeão Fut7 2025</a></li>
+                <li><a href="./compra-das-camisas/">Compre sua Camisa</a></li>
+                <li><a href="#contato" onclick="rolarParaContato(event)">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="inicio">
         <h1>BEM VINDOS À FAMÍLIA FENERBAHTCHÊ</h1>
         <h2>Bicampeão Citadino Sub-16 em 2023 e 2025, Vice-Campeão do Fut7 2025!</h2>
         <h3>Fenerbahtchê: Elenco, Conquistas, Comissão Técnica, Patrocinadores e a Nova Camisa da Torcida...</h3>
-    </header>
+    </div>
 
     <div class="logos">
         <img src="assets/escudo fenerbahtche.png" alt="Escudo Fenerbahtchê" class="escudo-fenerbas">
@@ -76,18 +94,45 @@
     <a href="./jogadoresFut7" class="link-jogadores"> CLIQUE AQUI E CONFIRA NOSSOS JOGADORES E PATROCINADORES DO FUT7 DE
         2025 </a>
 
-    <a class="link-camisas" href="./compra-das-camisas"> <strong><u>CLIQUE AQUI PARA COMPRAR A SUA CAMISA DO FENERBAHTCHÊ</u></strong> </a>
+    <a class="link-camisas" href="./compra-das-camisas"> <strong><u>CLIQUE AQUI PARA COMPRAR A SUA CAMISA DO
+                FENERBAHTCHÊ</u></strong> </a>
 
-    <footer>
-        <div class="links">
-            <h1>Entre em Contato:</h1>
-            <a href="https://wa.me/5551999550636"><img class="link-whats" src="assets/whatsapp.png" alt="WhatsApp"></a>
-            <a href="https://www.instagram.com/fenerbahtche2023/"><img class="link-insta" src="./assets/Instagram.svg" alt="Instagram"></a>
-            <h1>&copy; Fenerbahtchê</h1>
-    </div>
+    <footer id="contato">
+        <div class="footer-container">
+            <h1>Contato</h1>
+
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/fenerbahtche2023/" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <img src="./assets/Instagram.svg" alt="Instagram Fenerbahtchê" class="social-icon">
+                </a>
+                <a href="https://wa.me/5551999550636?text=Olá, gostaria de encomendar minha camisa!" target="_blank"
+                    rel="noopener" aria-label="WhatsApp">
+                    <img src="./assets/whatsapp.png" alt="WhatsApp Fenerbahtchê" class="social-icon">
+                </a>
+            </div>
+            <h2>© 2023 Fenerbahtchê. Todos os direitos reservados.</h2>
+        </div>
     </footer>
 
-    <script src="java.js"></script>
+
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const nav = document.getElementById("nav");
+
+        menuIcon.addEventListener("click", () => {
+            menuIcon.classList.toggle("open");
+            nav.classList.toggle("active");
+        });
+
+        function rolarParaContato(event) {
+            event.preventDefault();
+            const footer = document.getElementById("contato");
+            if (footer) {
+                footer.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
 </body>
 
 </html>

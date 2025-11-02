@@ -14,6 +14,23 @@
 </head>
 
 <body>
+    <header>
+        <div class="menu-icon" id="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html"> Início</a></li>
+                <li><a href="../campeonato2023/">Campeão Sub-16 2023</a></li>
+                <li><a href="../jogadoresSub16/">Bicampeão Sub-16 2025</a></li>
+                <li><a href="../compra-das-camisas/">Compre sua Camisa</a></li>
+                <li><a href="#contato" onclick="rolarParaContato(event)">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <div>
         <img src="../assets/Design sem nome (1).png" alt="Imagem de fundo" class="imagem-fundo">
         <div class="mascara"></div>
@@ -64,16 +81,40 @@
             <img src="../assets/21.jpg" alt="Patrocinador 2" class="imagem1">
         </div>
     </section>
-    <footer>
-        <div class="links">
-            <h1>Entre em Contato:</h1>
-            <a href="https://wa.me/5551999550636"><img class="link-whats" src="../assets/whatsapp.png"
-                    alt="WhatsApp"></a>
-            <a href="https://www.instagram.com/fenerbahtche2023/"><img class="link-insta" src="../assets/Instagram.svg"
-                    alt="Instagram"></a>
-            <h1>&copy; Fenerbahtchê</h1>
+    <footer id="contato">
+        <div class="footer-container">
+            <h1>Contato</h1>
+
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/fenerbahtche2023/" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <img src="../assets/Instagram.svg" alt="Instagram Fenerbahtchê" class="social-icon">
+                </a>
+                <a href="https://wa.me/5551999550636?text=Olá, gostaria de encomendar minha camisa!" target="_blank"
+                    rel="noopener" aria-label="WhatsApp">
+                    <img src="../assets/whatsapp.png" alt="WhatsApp Fenerbahtchê" class="social-icon">
+                </a>
+            </div>
+            <h2>© 2023 Fenerbahtchê. Todos os direitos reservados.</h2>
         </div>
     </footer>
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const nav = document.getElementById("nav");
+
+        menuIcon.addEventListener("click", () => {
+            menuIcon.classList.toggle("open");
+            nav.classList.toggle("active");
+        });
+
+        function rolarParaContato(event) {
+            event.preventDefault();
+            const footer = document.getElementById("contato");
+            if (footer) {
+                footer.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
 </body>
 
 </html>

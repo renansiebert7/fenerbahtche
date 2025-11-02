@@ -14,21 +14,29 @@ function fecharFormulario() {
     mascara.style.visibility = "hidden";
 }
 
-document.querySelector('.form-camisas').addEventListener('submit', function (event) {
-    event.preventDefault(); // Impede o envio padrão
+document.querySelector('.form-camisas').addEventListener('submit', async function (event) {
+    event.preventDefault();
 
     const form = this;
-    const data = new FormData(form);
+    const formData = new FormData(form);
+    const params = new URLSearchParams(formData);
 
-    // Envia os dados do formulário para o Formcarry
-    fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: { 'Accept': 'application/json' }
-    }).then(() => {
-        // Redireciona para a página de pagamento
-        window.location.href = "/fenerbahtche/pagamento/";
-    }).catch(() => {
-        alert("Erro ao enviar o formulário. Tente novamente.");
-    });
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: params
+        });
+
+        const text = await response.text();
+        console.log('Resposta do Apps Script:', text);
+
+        if (response.ok && text.includes("OK")) {
+            window.location.href = "../pagamento/";
+        } else {
+            alert("Erro ao enviar: " + text);
+        }
+    } catch (err) {
+        alert("Erro de rede: " + err.message);
+    }
 });
+

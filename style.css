@@ -101,6 +101,7 @@
     flex-direction: column;
     color: white;
     margin-top: 30px;
+    padding: 20px;
 }
 
 .inicio h1 {
@@ -213,7 +214,7 @@ nav ul li a:hover {
 }
 
 .menu-icon.open div:nth-child(1) {
-    transform: rotate(55deg) translate(10px, 8px);
+    transform: rotate(50deg) translate(10px, 8px);
 }
 
 .menu-icon.open div:nth-child(2) {
@@ -373,8 +374,11 @@ footer h2 {
         bottom: 60px;
     }
 
-    .titulo {
+    .div-texto h1 {
+        display: flex;
+        flex-wrap: wrap;
         font-size: 20px;
+        padding: 10px;
     }
 
     nav {
